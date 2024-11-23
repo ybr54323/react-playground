@@ -94,9 +94,10 @@ function App() {
 
 
     // Suzanne
-    let suzanne = null
+    let suzanne: THREE.Group | null = null
+
     gltfLoader.load(
-      window.parent.location.origin + '/suzanne.glb', // 使用父窗口的域名
+      window.parent.location.pathname + '/suzanne.glb', // 使用父窗口的域名
       (gltf: GLTFLoader) => {
         suzanne = gltf.scene
         suzanne.traverse((child: any) => {
