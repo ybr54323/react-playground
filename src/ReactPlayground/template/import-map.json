@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0",
+    "three": "https://esm.sh/three@0.162.0",
+    "three/addons/controls/OrbitControls.js": "https://esm.sh/three@0.162.0/examples/jsm/controls/OrbitControls.js",
+    "lil-gui": "https://esm.sh/lil-gui@0.20.0",
+    "three/addons/loaders/GLTFLoader.js": "https://esm.sh/three@0.162.0/examples/jsm/loaders/GLTFLoader.js"
+  }
+}
