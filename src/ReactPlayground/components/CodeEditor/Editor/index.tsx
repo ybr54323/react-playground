@@ -74,7 +74,7 @@ export default function Editor(props: Props) {
             ata(editor.getValue());
         });
 
-        ata(editor.getValue());
+        // ata(editor.getValue());
     }
 
     return <MonacoEditor
