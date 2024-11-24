@@ -2,10 +2,14 @@ import { useState, useEffect, useRef } from 'react'
 import './App.css'
 import vertex from './vertex.glsl'
 import fragment from './fragment.glsl'
+// @ts-ignore
 import * as THREE from 'three'
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+// @ts-ignore
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+// @ts-ignore
 import GUI from 'lil-gui'
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
+// @ts-ignore
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 
 

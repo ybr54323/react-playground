@@ -5,6 +5,8 @@
     "three": "https://esm.sh/three@0.162.0",
     "three/addons/controls/OrbitControls.js": "https://esm.sh/three@0.162.0/examples/jsm/controls/OrbitControls.js",
     "lil-gui": "https://esm.sh/lil-gui@0.20.0",
-    "three/addons/loaders/GLTFLoader.js": "https://esm.sh/three@0.162.0/examples/jsm/loaders/GLTFLoader.js"
+    "three/addons/loaders/GLTFLoader.js": "https://esm.sh/three@0.162.0/examples/jsm/loaders/GLTFLoader.js",
+    "three/examples/jsm/controls/OrbitControls": "https://esm.sh/three@0.162.0/examples/jsm/controls/OrbitControls.js",
+    "three/examples/jsm/loaders/GLTFLoader": "https://esm.sh/three@0.162.0/examples/jsm/loaders/GLTFLoader.js"
   }
 }
