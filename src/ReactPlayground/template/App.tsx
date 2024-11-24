@@ -101,7 +101,7 @@ function App() {
     let suzanne: THREE.Group | null = null
 
     gltfLoader.load(
-      window.parent.location.pathname + '/suzanne.glb', // 使用父窗口的域名
+      'https://yangbingrui.info/react-playground/suzanne.glb',
       (gltf: GLTFLoader) => {
         suzanne = gltf.scene
         suzanne.traverse((child: any) => {
@@ -112,9 +112,26 @@ function App() {
       }
     )
 
+    const clock = new THREE.Clock()
 
     // 动画循环
     const animate = () => {
+      const elapsedTime = clock.getElapsedTime()
+
+      // Rotate objects
+      if(suzanne)
+      {
+          suzanne.rotation.x = - elapsedTime * 0.1
+          suzanne.rotation.y = elapsedTime * 0.2
+      }
+  
+      sphere.rotation.x = - elapsedTime * 0.1
+      sphere.rotation.y = elapsedTime * 0.2
+  
+      torusKnot.rotation.x = - elapsedTime * 0.1
+      torusKnot.rotation.y = elapsedTime * 0.2
+
+
       requestAnimationFrame(animate)
       // cube.rotation.x += 0.01
       // cube.rotation.y += 0.01
