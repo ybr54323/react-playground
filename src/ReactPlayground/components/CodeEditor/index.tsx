@@ -25,7 +25,9 @@ export default function CodeEditor() {
         <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
             <FileNameList/>
             <Editor file={file} onChange={debounce(onEditorChange, 500)} options={{
-                theme: `vs-${theme}`
+                theme: `vs-${theme}`,
+                tabSize: 4,
+                insertSpaces: true,
             }}/>
         </div>
     )
